@@ -28,3 +28,11 @@ console.log(foo()) // 100
 x = 100
 console.log(foo()) // 101
 console.log(foo(123)) // 123
+
+function obj({ x, y = 5 }) {
+  console.log(x, y)
+}
+
+obj({})
+obj({ x: 1 })
+obj({ x: 1, y: 2 })
